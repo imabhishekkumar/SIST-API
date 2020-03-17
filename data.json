@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "name": "Spider-Man"
+      },
+      {
+        "id": 1,
+        "name": "Wonder-Woman"
+      },
+      {
+        "id": 2,
+        "name": "Thor"
+      },
+      {
+        "id": 3,
+        "name": "Captain Marvel"
+      },
+      {
+        "id": 4,
+        "name": "Hulk"
+      },
+      {
+        "id": 5,
+        "name": "Flash"
+      },
+      {
+        "id": 6,
+        "name": "Iron-Man"
+      },
+      {
+        "id": 7,
+        "name": "Captain America"
+      },
+      {
+        "id": 9,
+        "name": "Shazam"
+      },
+      {
+        "id": 9,
+        "name": "Bat-Man"
+      }
+]
