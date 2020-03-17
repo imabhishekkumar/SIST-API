@@ -7,4 +7,8 @@ Base URL : `https://sist-api.herokuapp.com/`
 
 ## Endpoints
 
-`/latestNews` - To get the news from the NEWS section
+| Endpoint    | Response                                                                                                                                                                                                                         |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/latestnews` |  `[ { "id": 0,          "headline" :   "Sample Heading 1." ,           "date" :   "Day DD Month YYYY"       },       { "id": 1,          "headline" :   "Sample Heading 2." ,           "date" :   "Day DD Month YYYY"       }  ]` |
+|             |                                                                                                                                                                                                                                  |
+
