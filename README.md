@@ -9,6 +9,6 @@ Base URL : `https://sist-api.herokuapp.com/`
 
 | Endpoint    | Response                                                                                                                                                                                                                         |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `/latestnews` |  `[ { "id": 0,          "headline" :   "Sample headline 1." ,           "date" :   "Day DD Month YYYY"       },       { "id": 1,          "headline" :   "Sample headline 2." ,           "date" :   "Day DD Month YYYY"       }  ]` |
+| `/latestNews` |  `[ { "id": 0,          "headline" :   "Sample headline 1." ,           "date" :   "Day DD Month YYYY"       },       { "id": 1,          "headline" :   "Sample headline 2." ,           "date" :   "Day DD Month YYYY"       }  ]` |
 |             |                                                                                                                                                                                                                                  |
 
