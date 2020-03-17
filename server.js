@@ -12,5 +12,5 @@ app.use(bodyParser.urlencoded({
 
 require('./app/routes')(app, {});
 app.listen(process.env.PORT ||port, () => {
-    console.log("We are live");
+    console.log("Port running");
 });
