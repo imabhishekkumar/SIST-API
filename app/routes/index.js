@@ -1,4 +1,4 @@
-const noteRoutes = require('./hero_routes');
+const latestNews = require('./latest_news.js');
 module.exports = function(app,db){
-    noteRoutes(app,db);
+    latestNews(app,db);
 }
