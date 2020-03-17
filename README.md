@@ -5,7 +5,7 @@ API to fetch data from Sathyabama website using webscraping.
 
 Base URL : `https://sist-api.herokuapp.com/`
 
-## Endpoints
+## Endpoints [GET]
 
 | Endpoint    | Response                                                                                                                                                                                                                         |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
