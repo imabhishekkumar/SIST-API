@@ -5,10 +5,13 @@ API to fetch data from Sathyabama website using webscraping.
 
 Base URL : `https://sist-api.herokuapp.com/`
 
-## Endpoints
+## Endpoints [GET]
 
 | Endpoint    | Response                                                                                                                                                                                                                         |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `/latestnews` |  `[ { "id": 0,          "headline" :   "Sample Heading 1." ,           "date" :   "Day DD Month YYYY"       },       { "id": 1,          "headline" :   "Sample Heading 2." ,           "date" :   "Day DD Month YYYY"       }  ]` |
-|             |                                                                                                                                                                                                                                  |
+| `/latestNews` |  `[ { "id": 0,          "headline" :   "Sample headline 1." ,           "date" :   "Day DD Month YYYY"       },       { "id": 1,          "headline" :   "Sample headline 2." ,           "date" :   "Day DD Month YYYY"       }  ]` |
+|      `/eventNews`       |    To be added                                                                                                                                                                                                                              |
+|      `/sportNews`       |      `[ { "id": 0,          "headline" :   "Sample headline 1." ,           "time" :   "Day DD Month YYYY"       },       { "id": 1,          "headline" :   "Sample headline 2." ,           "time" :   "Day DD Month YYYY"       }  ]`                                                                                                                                                                                                                            |
+|      `/placementRecords`       |           To be added                                                                                                                                                                                                                       |
+
 
