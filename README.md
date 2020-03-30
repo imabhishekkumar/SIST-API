@@ -3,7 +3,7 @@ API to fetch data from Sathyabama website using webscraping.
 
 ## How to use
 
-Base URL : `https://sist-api.herokuapp.com/`
+Base URL : `https://sist-api.herokuapp.com`
 
 ## Endpoints [GET]
 
