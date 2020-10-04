@@ -1,5 +1,5 @@
 module.exports = function (app, db) {
-    app.get('/p', (req, res) => {
+    app.get('/placementRecords', (req, res) => {
         const rp = require('request-promise');
         const cheerio = require('cheerio');
         const options = {
@@ -10,6 +10,7 @@ module.exports = function (app, db) {
         };
         var yearArr = [];
         var recordsArr = [];
+        var finalArray = [];
 
 
         rp(options)
@@ -19,44 +20,45 @@ module.exports = function (app, db) {
                         var h3=$(this).text().split(":")[1].trim();
                         yearArr.push(h3)
                     });
-                    console.log(yearArr);
                 });
                 $('.contents').each(function () {
+                    var json = {}
                     $(this).find('table').each(function() {
-                        var num=0;
+                        var num = 0;
                         $(this).find('td').each(function() {
-                            if(num%2!=0){
-                                var text=$(this).text();
-                                console.log(text,num)
-                                // var json ={
-
-                                // }
+                            if(num%2 != 0) {
+                                var text = $(this).text();
+                                if(num == 1) {
+                                    json.registered = text;
+                                } else if(num ==3) {
+                                    json.eligible = text;
+                                } else if(num == 5) {
+                                    json.placed=text;
+                                } else if(num==7) {
+                                    json.placedPercentage=text;
+                                } else if(num==9) {
+                                    json.comapanies=text;
+                                } else if(num==11) {
+                                    json.avaragePackege=text;
+                                } else {
+                                    console.log("Error")
+                                }
                             }
                             num++;
                         })
+                        recordsArr.push(json)
                     });
                 });
-                res.send(yearArr)
+                for(var i=0;i<yearArr.length;i++){
+                    var data = {}
+                    data.id = i;
+                    data.year = yearArr[i];
+                    data.records = recordsArr[i];
+                    finalArray.push(data)
+                }
+                res.send(finalArray)
             })
 
-            // .then(($) => {
-            //         // var id = 0;
-            //         // $(this).find('.sports-row1-rt').each(function (k, elem) {
-            //         //     var headline = "";
-            //         //     var date = "";
-            //         //     headline = $(this).find('p').find('a').text().trim();
-            //         //     date = $(this).find('span').text().trim();
-            //         //     var json = {
-            //         //         "id": id,
-            //         //         "headline": headline,
-            //         //         "date": date
-            //         //     }
-            //         //     arr.push(json)
-            //         //     id++;
-            //         // });
-            // })
-
-            
             .catch((err) => {
                 console.log(err);
             });        
