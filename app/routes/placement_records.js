@@ -33,13 +33,13 @@ module.exports = function (app, db) {
                                 } else if(num == 3) {
                                     json.eligible = text;
                                 } else if(num == 5) {
-                                    json.placed=text;
+                                    json.placed = text;
                                 } else if(num == 7) {
-                                    json.placedPercentage=text;
+                                    json.placedPercentage = text;
                                 } else if(num == 9) {
-                                    json.comapanies=text;
+                                    json.comapanies = text;
                                 } else if(num == 11) {
-                                    json.avaragePackege=text;
+                                    json.avaragePackege = text;
                                 } else {
                                     console.log("Error")
                                 }
