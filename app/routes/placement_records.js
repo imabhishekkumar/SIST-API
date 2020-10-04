@@ -30,15 +30,15 @@ module.exports = function (app, db) {
                                 var text = $(this).text();
                                 if(num == 1) {
                                     json.registered = text;
-                                } else if(num ==3) {
+                                } else if(num == 3) {
                                     json.eligible = text;
                                 } else if(num == 5) {
                                     json.placed=text;
-                                } else if(num==7) {
+                                } else if(num == 7) {
                                     json.placedPercentage=text;
-                                } else if(num==9) {
+                                } else if(num == 9) {
                                     json.comapanies=text;
-                                } else if(num==11) {
+                                } else if(num == 11) {
                                     json.avaragePackege=text;
                                 } else {
                                     console.log("Error")
